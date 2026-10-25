@@ -147,6 +147,7 @@ def marco(titulo, cuerpo, prof=0, desc="", marca=True):
   <nav>
     <a href="{base}">Inicio</a>
     <a href="{base}register.html">Lista</a>
+    <a href="{base}ficha.html">Ficha</a>
     <a href="{base}method.html">Procedencia</a>
     <a href="{base}privacy.html">Privacidad</a>
   </nav>
@@ -358,6 +359,40 @@ def pagina_ficha(r):
                  f'{r["Organization"]}, {r["StakeholderCategory"]}, {r["Region"]}.')
 
 
+def pagina_ficha_indice(regs):
+    ids = ",".join(sorted((r["ID"] for r in regs), key=int))
+    cuerpo = f"""
+<h1>Ficha</h1>
+<p class="gloss">Una ficha por aportación · One record per contribution</p>
+<p>Cada aportación tiene su propia ficha, con una dirección estable de la forma
+<span class="mono">/entry/669/</span>. Es la dirección que se cita. Escribe el
+identificador para abrirla, o búscala por nombre en la <a href="register.html">Lista</a>.</p>
+<p class="en">Every contribution has its own record page at a stable address. Enter the
+identifier to open it, or search by name in the list.</p>
+<form class="filters" id="ir-ficha">
+  <input id="num" type="text" inputmode="numeric" autocomplete="off"
+         placeholder="Identificador · Identifier" aria-label="Identificador">
+  <button type="submit" style="font:inherit;font-size:.92rem;padding:.5rem .9rem;border:1px solid var(--green);background:transparent;color:var(--green);border-radius:3px;cursor:pointer">Abrir ficha</button>
+</form>
+<p id="aviso" class="small" aria-live="polite"></p>
+<p class="small">Ejemplo · Example: <a href="entry/669/">registro 669</a></p>
+<script>
+(function(){{
+  var ids=new Set("{ids}".split(","));
+  document.getElementById("ir-ficha").addEventListener("submit",function(e){{
+    e.preventDefault();
+    var n=document.getElementById("num").value.trim().replace(/^0+/,"");
+    if(ids.has(n)){{location.href="entry/"+n+"/";}}
+    else{{document.getElementById("aviso").textContent=
+      "No hay ningún registro con ese identificador · No record with that identifier";}}
+  }});
+}})();
+</script>
+"""
+    return marco("Ficha · Anclame", cuerpo, 0,
+                 "Abrir la ficha de una aportación al Diálogo Global sobre Gobernanza de la IA por su identificador.")
+
+
 def pagina_metodo(proc):
     filas = "".join(
         f"<div><dt>{html.escape(k)}</dt><dd class='mono'>{html.escape(str(v))}</dd></div>"
@@ -512,6 +547,10 @@ def main():
     json.dump(proc, open(os.path.join(DATA, "provenance.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
 
+    # docs/revision.html es la vista de revisión jurídica: no se genera aquí,
+    # se conserva tal cual entre reconstrucciones y no se enlaza desde el sitio.
+    revision = os.path.join(DOCS, "revision.html")
+    revision_html = open(revision, "rb").read() if os.path.exists(revision) else None
     if os.path.isdir(DOCS):
         shutil.rmtree(DOCS)
     os.makedirs(DOCS)
@@ -521,6 +560,9 @@ def main():
     open(os.path.join(DOCS, "register.html"), "w", encoding="utf-8").write(pagina_lista(regs))
     open(os.path.join(DOCS, "method.html"), "w", encoding="utf-8").write(pagina_metodo(proc))
     open(os.path.join(DOCS, "privacy.html"), "w", encoding="utf-8").write(pagina_privacidad())
+    open(os.path.join(DOCS, "ficha.html"), "w", encoding="utf-8").write(pagina_ficha_indice(regs))
+    if revision_html is not None:
+        open(revision, "wb").write(revision_html)
     for r in regs:
         d = os.path.join(DOCS, "entry", r["ID"])
         os.makedirs(d, exist_ok=True)
