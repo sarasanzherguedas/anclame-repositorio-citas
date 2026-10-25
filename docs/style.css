@@ -116,3 +116,4 @@ dl.record dd{margin:0;overflow-wrap:anywhere;color:var(--text)}
 footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--rule);
   font-size:.85rem;color:var(--faint)}
 footer p{max-width:36rem;margin-bottom:.5rem}
+footer .credit{font-size:.85em;opacity:.75}

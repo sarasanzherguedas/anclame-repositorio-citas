@@ -105,9 +105,7 @@ es información, no un error.
 El código, bajo licencia MIT. Los metadatos de `data/`, bajo CC0: son hechos sobre
 documentos públicos y no se reclama derecho alguno sobre ellos.
 
-## Autoría · Authorship
-
-Sara Sanz Herguedas — ORCID [0009-0000-7610-6408](https://orcid.org/0009-0000-7610-6408)
+## Declaración · Disclosure
 
 Parte afectada: la autora es contribuyente escrita al Diálogo Global, registro 669. Esta
 circunstancia se declara porque afecta a la lectura del trabajo, no porque invalide las
@@ -116,3 +114,7 @@ comprobaciones, que cualquiera puede repetir.
 *Disclosure: the author is a written contributor to the Global Dialogue, record 669. This
 is stated because it bears on how the work should be read, not because it undermines the
 checks, which anyone can repeat.*
+
+---
+
+<sub>Sara Sanz Herguedas · ORCID [0009-0000-7610-6408](https://orcid.org/0009-0000-7610-6408) · sasanher@bbaa.upv.es</sub>

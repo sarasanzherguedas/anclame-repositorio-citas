@@ -159,6 +159,7 @@ sobre Gobernanza de la IA. El texto de las aportaciones no se reproduce aquí.</
 on AI Governance. The text of the contributions is not reproduced here.</p>
 <p><a href="{base}privacy.html">Privacidad y retirada</a> &middot;
 <a href="{base}method.html">Procedencia</a></p>
+<p class="credit">Sara Sanz Herguedas &middot; <a href="mailto:sasanher@bbaa.upv.es">sasanher@bbaa.upv.es</a></p>
 </footer>
 </div>
 </body>
@@ -390,7 +391,7 @@ de ellas y no quieres aparecer aquí, escribe y se retira.</p>
 <h2>Quién responde de esto</h2>
 <p>Sara Sanz Herguedas, investigadora independiente.
 ORCID <a href="https://orcid.org/0009-0000-7610-6408">0009-0000-7610-6408</a>.
-Correo de contacto: <a href="mailto:privacidad@anclame.org">privacidad@anclame.org</a>.</p>
+Correo de contacto: <a href="mailto:sasanher@bbaa.upv.es">sasanher@bbaa.upv.es</a>.</p>
 
 <h2>Qué datos hay</h2>
 <p>Por cada aportación: el identificador que le asignó el Diálogo Global, el nombre de la
@@ -418,7 +419,7 @@ titulares consintieron publicar, con el mínimo de información necesaria para c
 Puedes solicitar copia del análisis que sustenta esa valoración.</p>
 
 <h2>Cómo pedir que se retire</h2>
-<p>Escribe a <a href="mailto:privacidad@anclame.org">privacidad@anclame.org</a> indicando el
+<p>Escribe a <a href="mailto:sasanher@bbaa.upv.es">sasanher@bbaa.upv.es</a> indicando el
 identificador o el nombre que aparece. No hace falta motivar la petición ni acreditar nada
 más allá de que el registro es tuyo.</p>
 <p>La retirada se hace en un plazo máximo de un mes y normalmente en pocos días. Al
@@ -452,7 +453,7 @@ contributor, stakeholder category, region, and the size of the response. It does
 the text of the answers. The data comes from the corpus published by the United Nations,
 where contributors had consented to publication with attribution. The basis for processing
 is legitimate interest under Article 6(1)(f) GDPR. To have your record withdrawn, write to
-privacidad@anclame.org quoting the identifier or name; withdrawal takes place within one
+sasanher@bbaa.upv.es quoting the identifier or name; withdrawal takes place within one
 month. The identifier remains with a note that the record was withdrawn at its holder's
 request, so that the totals stay accurate. Withdrawal here does not remove anything from
 the United Nations site or from the CeSIA replica. This site sets no cookies and runs no
