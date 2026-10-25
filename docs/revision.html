@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Revisión jurídica · Anclame · Registro citable de aportaciones al Diálogo Global sobre Gobernanza de la IA</title>
+<meta name="description" content="Registro citable de las 1.534 aportaciones escritas al Diálogo Global sobre Gobernanza de la IA de Naciones Unidas: una dirección estable por aportación y la procedencia de cada dato.">
+<meta name="author" content="Sara Sanz Herguedas">
+<meta name="keywords" content="Diálogo Global, gobernanza de la IA, Naciones Unidas, aportaciones, sociedad civil, Global Dialogue on AI Governance, UN, citable">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Anclame · Registro citable de aportaciones">
+<meta property="og:description" content="1.534 personas y organizaciones respondieron al Diálogo Global sobre Gobernanza de la IA de Naciones Unidas. Anclame da a cada aportación una dirección estable.">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 31' fill='none' stroke='%238cb49f' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='3.6' r='2.6'/%3E%3Cpath d='M11 6.2V27.4M6 10.4h10M2.4 18.6c0 5 3.9 8.8 8.6 8.8s8.6-3.8 8.6-8.8'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:dark;
+  --ground:#0d1714;
+  --text:rgba(233,240,234,.86);
+  --bright:rgba(233,240,234,.96);
+  --muted:rgba(233,240,234,.52);
+  --faint:rgba(233,240,234,.34);
+  --rule:rgba(233,240,234,.11);
+  --green:#8cb49f;
+  --coral:#c8897a;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",
+         Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ground);color:var(--text);
+  font-family:var(--sans);font-size:17px;line-height:1.6;
+  font-weight:400;letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:42rem;margin:0 auto;padding:2.5rem 1.5rem 6rem}
+
+a{color:var(--green);text-decoration:none;border-bottom:1px solid transparent;
+  transition:border-color .15s}
+a:hover{border-bottom-color:var(--green)}
+a:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:2px}
+
+header.site{display:flex;flex-wrap:wrap;gap:.5rem 2rem;align-items:baseline;
+  margin-bottom:4rem}
+header.site .name{font-size:1.05rem;font-weight:500;letter-spacing:.02em}
+header.site .name a{color:var(--bright);border:0}
+header.site nav{margin-left:auto;font-size:.9rem}
+header.site nav a{margin-left:1.5rem;color:var(--muted)}
+header.site nav a:hover{color:var(--green)}
+
+h1{font-size:1.55rem;line-height:1.3;font-weight:400;letter-spacing:-.01em;
+  color:var(--bright);margin:0 0 1.1rem;max-width:26ch}
+h2{font-size:1rem;font-weight:500;letter-spacing:.05em;color:var(--muted);
+  margin:3.5rem 0 1rem}
+p{margin:0 0 1.1rem;max-width:36rem}
+.lead{font-size:1.1rem;line-height:1.6;color:var(--text);max-width:34rem}
+.en{color:var(--faint);max-width:36rem}
+.small{font-size:.9rem;color:var(--muted)}
+
+/* Fondeo: el nombre aparece, el ancla desciende de la ultima letra,
+   atraviesa la superficie, oscila y se detiene. Sucede una sola vez. */
+.hero{position:relative;margin:0 0 2.4rem;padding-bottom:8rem}
+.mark{position:relative;display:inline-block;
+  font-size:clamp(2.7rem,10vw,3.9rem);font-weight:400;letter-spacing:-.035em;
+  line-height:1;color:var(--bright)}
+.rig{position:absolute;right:.1em;top:100%;width:1px;height:5.4rem;transform-origin:top}
+.chain{position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(140,180,159,0),rgba(140,180,159,.4))}
+.anchor{position:absolute;top:100%;left:50%;transform:translate(-50%,-2px);
+  color:var(--green);opacity:.42;display:block}
+.sea{position:absolute;left:0;right:0;bottom:4.1rem;height:18px;
+  color:var(--green);opacity:.22;overflow:hidden}
+.sea svg{display:block;width:200%;height:100%}
+.sea path{fill:none;stroke:currentColor;stroke-width:1;vector-effect:non-scaling-stroke}
+
+@media(prefers-reduced-motion:no-preference){
+  .mark{animation:emerge .85s ease-out both}
+  .rig{animation:fondeo 2.5s cubic-bezier(.4,.05,.3,1) .85s both}
+  .sea{animation:superficie 1.4s ease-out .5s both}
+  .sea svg{animation:marea 11s linear infinite}
+  @keyframes emerge{
+    from{opacity:0;transform:translateY(.35em)}
+    to{opacity:1;transform:none}
+  }
+  @keyframes fondeo{
+    0%{height:0}
+    44%{height:6.15rem}
+    60%{height:4.4rem}
+    74%{height:5.5rem}
+    85%{height:4.85rem}
+    93%{height:5.2rem}
+    100%{height:5.4rem}
+  }
+  @keyframes superficie{from{opacity:0}to{opacity:.22}}
+  @keyframes marea{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+}
+
+.figures{display:flex;flex-wrap:wrap;gap:2.5rem 3.5rem;margin:2.5rem 0 1rem}
+.figures .n{font-size:1.9rem;font-weight:400;letter-spacing:-.01em;color:var(--bright);
+  line-height:1}
+.figures .n.off{color:var(--coral)}
+.figures .lab{font-size:.85rem;color:var(--muted);margin-top:.5rem;max-width:11rem;
+  line-height:1.4}
+
+table{border-collapse:collapse;width:100%;font-size:.94rem;margin:0 0 1rem}
+th,td{text-align:left;padding:.55rem 1rem .55rem 0;border-bottom:1px solid var(--rule);
+  vertical-align:top;font-weight:400}
+th{color:var(--faint);font-size:.8rem;letter-spacing:.04em}
+td:last-child,th:last-child{padding-right:0}
+td.num,th.num{text-align:right;font-family:var(--mono);font-size:.88rem}
+.scroll{overflow-x:auto}
+
+dl.record{margin:0}
+dl.record div{display:grid;grid-template-columns:14rem 1fr;gap:1.5rem;
+  padding:.85rem 0;border-bottom:1px solid var(--rule)}
+dl.record dt{color:var(--muted);font-size:.92rem}
+dl.record dt span{display:block;color:var(--faint);font-size:.78rem}
+dl.record dd{margin:0;overflow-wrap:anywhere;color:var(--text)}
+@media(max-width:34rem){dl.record div{grid-template-columns:1fr;gap:.25rem}}
+
+.mono{font-family:var(--mono);font-size:.88rem}
+.repaired{color:var(--coral)}
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0 .75rem}
+.filters input,.filters select{font:inherit;font-size:.92rem;padding:.5rem .6rem;
+  border:1px solid var(--rule);background:transparent;color:var(--text);border-radius:3px}
+.filters input{flex:1 1 12rem;min-width:0}
+.filters select{color:var(--muted)}
+#tally{font-size:.85rem;color:var(--faint);margin:0 0 1.5rem}
+
+footer{margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--rule);
+  font-size:.85rem;color:var(--faint)}
+footer p{max-width:36rem;margin-bottom:.5rem}
+footer svg{vertical-align:-1px}
+
+
+.tabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 3rem;padding-bottom:1rem;
+  border-bottom:1px solid var(--rule)}
+.tabs button{font:inherit;font-size:.9rem;padding:.45rem .85rem;border-radius:3px;
+  border:1px solid var(--rule);background:transparent;color:var(--muted);cursor:pointer}
+.tabs button:hover{color:var(--green);border-color:var(--green)}
+.tabs button[aria-current="true"]{color:var(--ground);background:var(--green);
+  border-color:var(--green)}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="tabs"><button data-t="inicio">Inicio</button><button data-t="lista">Lista</button><button data-t="ficha">Ficha</button><button data-t="procedencia">Procedencia</button><button data-t="privacidad">Privacidad</button></div>
+<section id="s-inicio">
+
+
+<div class="hero">
+  <span class="sea" aria-hidden="true">
+    <svg viewBox="0 0 2400 18" preserveAspectRatio="none">
+      <path d="M0 9q150 -5.5 300 0t300 0t300 0t300 0t300 0t300 0t300 0t300 0"/>
+    </svg>
+  </span>
+  <span class="mark">Anclame<span class="rig"><span class="chain"></span>
+    <svg class="anchor" width="19" height="27" viewBox="0 0 22 31" fill="none"
+         stroke="currentColor" stroke-width="1.1" stroke-linecap="round" aria-hidden="true">
+      <circle cx="11" cy="3.6" r="2.6"/>
+      <path d="M11 6.2V27.4"/>
+      <path d="M6 10.4h10"/>
+      <path d="M2.4 18.6c0 5 3.9 8.8 8.6 8.8s8.6-3.8 8.6-8.8"/>
+    </svg></span></span>
+</div>
+
+<h1>Que una aportación se pueda encontrar, citar y volver a leer</h1>
+<p class="lead">1.534 personas y organizaciones de todo el mundo respondieron a la
+convocatoria del Diálogo Global sobre Gobernanza de la IA de Naciones Unidas. Sus textos
+están publicados, pero no tienen dirección propia, no aparecen en los buscadores y no se
+pueden citar. Anclame le da a cada uno una dirección estable y documenta de dónde sale
+cada dato.</p>
+<p class="small">Esto no es un sitio oficial de Naciones Unidas ni una crítica a quienes
+participaron. Es un registro para que su trabajo se pueda encontrar.</p>
+<p class="en">1,534 people and organisations around the world answered the call of
+the UN Global Dialogue on AI Governance. Their texts are published, but have no address of
+their own, do not appear in search engines and cannot be cited. Anclame gives each one a
+stable address and documents where every figure comes from. This is not an official UN
+site, nor a criticism of those who took part.</p>
+
+<h2>Una dirección por aportación</h2>
+<p>Cada registro tiene aquí una dirección propia y estable, de la forma
+<span class="mono">/entry/669/</span>, que se puede citar y a la que se puede volver. En el
+sitio oficial no la tiene: el corpus entero vive dentro de un marco cuyo contenido está
+marcado para que los buscadores no lo indexen.</p>
+<p class="en">On the official site there is none: the whole corpus lives inside a frame
+whose contents are marked so that search engines will not index them.</p>
+<p><a href="#lista" data-ir="lista">Ver la lista completa</a></p>
+
+<h2>Cuántas hay</h2>
+<p>El fichero que sirve la página contiene 1.534 registros, con 1.534
+identificadores distintos y ninguno repetido. Las preguntas frecuentes del sitio oficial
+hablan de 1.532 aportaciones. La diferencia no está explicada en ninguna parte.</p>
+<div class="figures">
+  <div><div class="n">1.534</div><div class="lab">registros en el fichero<br>records in the file</div></div>
+  <div><div class="n off">1.532</div><div class="lab">aportaciones declaradas<br>contributions stated</div></div>
+  <div><div class="n">22</div><div class="lab">nombres con la codificación dañada<br>names with broken encoding</div></div>
+</div>
+
+<h2>Por región · By region</h2>
+<div class="scroll"><table>
+<thead><tr><th>Región</th><th class="num">Registros</th></tr></thead>
+<tbody><tr><td>Global</td><td class='num'>467</td></tr><tr><td>Asia and the Pacific</td><td class='num'>307</td></tr><tr><td>Western Europe and Other States</td><td class='num'>304</td></tr><tr><td>Africa</td><td class='num'>264</td></tr><tr><td>Latin America and the Caribbean</td><td class='num'>125</td></tr><tr><td>Eastern Europe</td><td class='num'>67</td></tr></tbody></table></div>
+
+<h2>Por categoría · By stakeholder category</h2>
+<p class="small">Las categorías no están normalizadas en el origen. Las variantes con
+espacios finales, y la forma <span class="mono">International Organization</span> frente a
+<span class="mono">International Organisation</span>, quedan fuera de los filtros del visor
+oficial. Aquí se recuentan juntas y se muestra la forma tal como está almacenada.</p>
+<div class="scroll"><table>
+<thead><tr><th>Categoría</th><th class="num">Registros</th><th>Formas almacenadas</th></tr></thead>
+<tbody><tr><td>Civil Society</td><td class='num'>400</td><td class='mono'>sin variación &times; 357; &#x27;Civil Society   &#x27; &times; 43</td></tr><tr><td>Private Sector</td><td class='num'>380</td><td class='mono'>sin variación &times; 375; &#x27;Private Sector  &#x27; &times; 5</td></tr><tr><td>Academia</td><td class='num'>360</td><td class='mono'>sin variación &times; 354; &#x27;Academia    &#x27; &times; 6</td></tr><tr><td>International Organisation</td><td class='num'>146</td><td class='mono'>sin variación &times; 145; &#x27;International Organization&#x27; &times; 1</td></tr><tr><td>Government</td><td class='num'>126</td><td class='mono'>sin variación &times; 126</td></tr><tr><td>Technical Community</td><td class='num'>122</td><td class='mono'>sin variación &times; 122</td></tr></tbody></table></div>
+
+<h2>Qué hay y qué no hay aquí</h2>
+<p>Este registro contiene metadatos: identificador, organización, categoría, región,
+cuántas preguntas contestó cada aportación y cuántos caracteres ocupa la respuesta. No
+contiene el texto de las respuestas, y no va a contenerlo sin el consentimiento de quien
+lo escribió.</p>
+<p class="en">This register holds metadata only. It does not hold the text of the answers,
+and will not without the consent of whoever wrote them.</p>
+<p><a href="#procedencia" data-ir="procedencia">Cómo se ha obtenido</a></p>
+
+
+</section><section id="s-lista" hidden>
+
+
+<h1>Lista completa</h1>
+<p class="small">All 1,534 records</p>
+<p class="note">El símbolo &#9873; marca los nombres cuya codificación estaba dañada en el
+origen y aparece aquí reparada. La forma almacenada se conserva en la ficha de cada uno.</p>
+<div class="filters">
+  <input id="q" type="search" placeholder="Buscar organización · Search organisation" aria-label="Buscar organización">
+  <select id="fr" aria-label="Región"><option value="">Todas las regiones</option><option value="Africa">Africa</option><option value="Asia and the Pacific">Asia and the Pacific</option><option value="Eastern Europe">Eastern Europe</option><option value="Global">Global</option><option value="Latin America and the Caribbean">Latin America and the Caribbean</option><option value="Western Europe and Other States">Western Europe and Other States</option></select>
+  <select id="fc" aria-label="Categoría"><option value="">Todas las categorías</option><option value="Academia">Academia</option><option value="Civil Society">Civil Society</option><option value="Government">Government</option><option value="International Organisation">International Organisation</option><option value="Private Sector">Private Sector</option><option value="Technical Community">Technical Community</option></select>
+</div>
+<p id="tally">40 de 1.534</p>
+<div class="scroll"><table id="t">
+<thead><tr><th class="num">ID</th><th>Organización</th><th>Categoría</th><th>Región</th></tr></thead>
+<tbody><tr data-r="Western Europe and Other States" data-c="Private Sector"><td class="num">3</td><td>Ethica Group Ltd</td><td>Private Sector</td><td>Western Europe and Other States</td></tr><tr data-r="Asia and the Pacific" data-c="Private Sector"><td class="num">4</td><td>SAIF CHECK</td><td>Private Sector</td><td>Asia and the Pacific</td></tr><tr data-r="Latin America and the Caribbean" data-c="Private Sector"><td class="num">5</td><td>Tabuga Think Tank</td><td>Private Sector</td><td>Latin America and the Caribbean</td></tr><tr data-r="Asia and the Pacific" data-c="Government"><td class="num">6</td><td>Ministry of Foreign Affairs, Dhaka</td><td>Government</td><td>Asia and the Pacific</td></tr><tr data-r="Latin America and the Caribbean" data-c="Government"><td class="num">7</td><td>Bahamas Government</td><td>Government</td><td>Latin America and the Caribbean</td></tr><tr data-r="Asia and the Pacific" data-c="Technical Community"><td class="num">8</td><td>CSI </td><td>Technical Community</td><td>Asia and the Pacific</td></tr><tr data-r="Africa" data-c="Private Sector"><td class="num">9</td><td>AI Studio Uganda</td><td>Private Sector</td><td>Africa</td></tr><tr data-r="Latin America and the Caribbean" data-c="International Organisation"><td class="num">10</td><td>Organization of American States</td><td>International Organisation</td><td>Latin America and the Caribbean</td></tr><tr data-r="Global" data-c="Civil Society"><td class="num">11</td><td>G3ict, Global Initiative for Inclusive ICTs</td><td>Civil Society</td><td>Global</td></tr><tr data-r="Africa" data-c="Government"><td class="num">12</td><td>OnPoint</td><td>Government</td><td>Africa</td></tr><tr data-r="Western Europe and Other States" data-c="Private Sector"><td class="num">13</td><td>Deep Learning Partnership</td><td>Private Sector</td><td>Western Europe and Other States</td></tr><tr data-r="Africa" data-c="Private Sector"><td class="num">14</td><td>Gamecampcities Financial</td><td>Private Sector</td><td>Africa</td></tr><tr data-r="Global" data-c="Private Sector"><td class="num">15</td><td>Neubauer Legal / AiNJA â€“ AI Governance &amp; Regulatory Strategy</td><td>Private Sector</td><td>Global</td></tr><tr data-r="Asia and the Pacific" data-c="International Organisation"><td class="num">16</td><td>Good governance India foundation</td><td>International Organisation</td><td>Asia and the Pacific</td></tr><tr data-r="Eastern Europe" data-c="Academia"><td class="num">17</td><td>YSU</td><td>Academia</td><td>Eastern Europe</td></tr><tr data-r="Asia and the Pacific" data-c="Civil Society"><td class="num">18</td><td>Rayznews </td><td>Civil Society</td><td>Asia and the Pacific</td></tr><tr data-r="Global" data-c="Private Sector"><td class="num">19</td><td>Diverse AI Solutions | AI2030</td><td>Private Sector</td><td>Global</td></tr><tr data-r="Africa" data-c="Private Sector"><td class="num">21</td><td>Somali Jobs INc</td><td>Private Sector</td><td>Africa</td></tr><tr data-r="Global" data-c="Academia"><td class="num">22</td><td>Plekhanov University (PRUE) Dubai Campus</td><td>Academia</td><td>Global</td></tr><tr data-r="Western Europe and Other States" data-c="Technical Community"><td class="num">23</td><td>EPAM</td><td>Technical Community</td><td>Western Europe and Other States</td></tr><tr data-r="Western Europe and Other States" data-c="Academia"><td class="num">24</td><td>FARI - AI for the Common Good</td><td>Academia</td><td>Western Europe and Other States</td></tr><tr data-r="Western Europe and Other States" data-c="Civil Society"><td class="num">25</td><td>Academy Achievers </td><td>Civil Society</td><td>Western Europe and Other States</td></tr><tr data-r="Global" data-c="Academia"><td class="num">26</td><td>New York University - Peace Research and Education Program</td><td>Academia</td><td>Global</td></tr><tr data-r="Global" data-c="International Organisation"><td class="num">27</td><td>Independent Expert</td><td>International Organisation</td><td>Global</td></tr><tr data-r="Global" data-c="Private Sector"><td class="num">28</td><td>Lisa Intelligence Systems Inc.</td><td>Private Sector</td><td>Global</td></tr><tr data-r="Asia and the Pacific" data-c="Academia"><td class="num">29</td><td>University of Delhi </td><td>Academia</td><td>Asia and the Pacific</td></tr><tr data-r="Eastern Europe" data-c="Private Sector"><td class="num">31</td><td>Signatu</td><td>Private Sector</td><td>Eastern Europe</td></tr><tr data-r="Latin America and the Caribbean" data-c="Academia"><td class="num">32</td><td>UNDelta - UNPAZ</td><td>Academia</td><td>Latin America and the Caribbean</td></tr><tr data-r="Global" data-c="Civil Society"><td class="num">33</td><td>ArtsEnvoy.ai / Arts &amp; Culture Working Group</td><td>Civil Society</td><td>Global</td></tr><tr data-r="Western Europe and Other States" data-c="Academia"><td class="num">36</td><td>University of Brighton, UK</td><td>Academia</td><td>Western Europe and Other States</td></tr><tr data-r="Western Europe and Other States" data-c="Academia"><td class="num">37</td><td>DTx - Digital Transformation CoLAB</td><td>Academia</td><td>Western Europe and Other States</td></tr><tr data-r="Global" data-c="International Organisation"><td class="num">38</td><td>AI and Quantum International Hub (AIQUAINT)</td><td>International Organisation</td><td>Global</td></tr><tr data-r="Asia and the Pacific" data-c="Civil Society"><td class="num">39</td><td>WPIUN/SOCIAL GOOD SUMMIT</td><td>Civil Society</td><td>Asia and the Pacific</td></tr><tr data-r="Global" data-c="Civil Society"><td class="num">40</td><td>International Bar Association</td><td>Civil Society</td><td>Global</td></tr><tr data-r="Western Europe and Other States" data-c="Academia"><td class="num">41</td><td>Breda University of Applied Sciences</td><td>Academia</td><td>Western Europe and Other States</td></tr><tr data-r="Eastern Europe" data-c="Private Sector"><td class="num">42</td><td>ThinkAhead Advisory</td><td>Private Sector</td><td>Eastern Europe</td></tr><tr data-r="Global" data-c="Civil Society"><td class="num">43</td><td>Women At The Table / A+ Alliance for Inclusive Algorithms / AI &amp; Equality Initiative</td><td>Civil Society</td><td>Global</td></tr><tr data-r="Asia and the Pacific" data-c="Private Sector"><td class="num">44</td><td>Lumivox Labwork and Consulting Firm</td><td>Private Sector</td><td>Asia and the Pacific</td></tr><tr data-r="Western Europe and Other States" data-c="Civil Society"><td class="num">45</td><td>Lucid Pattern &amp; IGF MAG Strategy Committee</td><td>Civil Society</td><td>Western Europe and Other States</td></tr><tr data-r="Africa" data-c="Private Sector"><td class="num">46</td><td>Zeronomicon</td><td>Private Sector</td><td>Africa</td></tr></tbody></table></div>
+<script>
+(function(){
+  var q=document.getElementById('q'),fr=document.getElementById('fr'),
+      fc=document.getElementById('fc'),tally=document.getElementById('tally'),
+      rows=[].slice.call(document.querySelectorAll('#t tbody tr'));
+  function apply(){
+    var t=q.value.trim().toLowerCase(),r=fr.value,c=fc.value,n=0;
+    rows.forEach(function(row){
+      var ok=(!r||row.dataset.r===r)&&(!c||row.dataset.c===c)&&
+             (!t||row.cells[1].textContent.toLowerCase().indexOf(t)>-1);
+      row.hidden=!ok; if(ok)n++;
+    });
+    tally.textContent=n.toLocaleString('es-ES')+(n===1?' registro':' registros');
+  }
+  [q,fr,fc].forEach(function(el){el.addEventListener('input',apply)});
+})();
+</script>
+
+
+</section><section id="s-ficha" hidden>
+
+
+<h1>Sara Sanz Research · AI Behaviour Auditing</h1>
+<p class="gloss">Registro 669 · Record 669</p>
+<dl class="record"><div><dt>Identificador<span>Identifier</span></dt><dd class="mono">669</dd></div><div><dt>Organización<span>Organisation</span></dt><dd>Sara Sanz Research · AI Behaviour Auditing</dd></div><div><dt>Categoría<span>Stakeholder category</span></dt><dd>Civil Society</dd></div><div><dt>Región<span>Region</span></dt><dd>Western Europe and Other States</dd></div><div><dt>Organización tal como se almacena<span>Organisation as stored</span></dt><dd class="mono repaired">Sara Sanz Research Â· AI Behaviour Auditing</dd></div><div><dt>Codificación reparada<span>Encoding repaired</span></dt><dd>yes</dd></div><div><dt>Categoría tal como se almacena<span>Category as stored</span></dt><dd>Civil Society</dd></div><div><dt>Preguntas contestadas<span>Questions answered</span></dt><dd class="mono">11</dd></div><div><dt>Caracteres de respuesta<span>Characters of response</span></dt><dd class="mono">21579</dd></div></dl>
+<h2>El mismo registro en otros sitios</h2>
+<p class="note">
+<a href="https://aidialoguereport.org/explorer/669/">Ficha en la réplica de CeSIA</a><br>
+<a href="https://www.un.org/global-dialogue-ai-governance/en/inputs">Página oficial de aportaciones</a>
+(el corpus se carga dentro de un marco y no tiene dirección por registro)
+</p>
+
+
+</section><section id="s-procedencia" hidden>
+
+
+<h1>Procedencia</h1>
+<p class="gloss">How this register was obtained</p>
+<p>La página oficial de aportaciones no sirve ni una base de datos ni un fichero de datos.
+Carga un marco con una aplicación alojada en otro dominio, y el corpus entero viaja
+incrustado como texto dentro de uno de sus ficheros de programa, que el navegador trocea
+al vuelo. El nombre de ese fichero cambia cada vez que la aplicación se reconstruye, de
+modo que tampoco él tiene una dirección estable.</p>
+<p class="en">The official contributions page serves neither a database nor a data file.
+It loads a frame holding an application on another domain, and the entire corpus travels
+embedded as text inside one of its program files, which the browser splits up on the fly.
+The name of that file changes every time the application is rebuilt, so not even it has a
+stable address.</p>
+<p>Lo que sigue permite a cualquiera repetir la extracción y obtener las mismas huellas.</p>
+<dl class="record"><div><dt>fecha_de_extraccion</dt><dd class='mono'>2026-09-23</dd></div><div><dt>pagina_oficial</dt><dd class='mono'>https://www.un.org/global-dialogue-ai-governance/en/inputs</dd></div><div><dt>aplicacion_incrustada</dt><dd class='mono'>https://aiwritteninputs.vercel.app/</dd></div><div><dt>artefacto_de_origen</dt><dd class='mono'>https://aiwritteninputs.vercel.app/assets/QuestionnaireViewer-D3o4zISX.js</dd></div><div><dt>artefacto_bytes_en_el_servidor</dt><dd class='mono'>18461048</dd></div><div><dt>artefacto_sha256_en_el_servidor</dt><dd class='mono'>bc148c0f59ffa7c252048eb28aa386c5ed76122e46ed49fafa3ce316df4919ed</dd></div><div><dt>artefacto_bytes_de_la_copia_local</dt><dd class='mono'>18461044</dd></div><div><dt>artefacto_sha256_de_la_copia_local</dt><dd class='mono'>ee6d07a9fd62f0cafad3be7a31f6bb2bf8d9a9f68cb36c304364c82a4a6fdd8f</dd></div><div><dt>nota_sobre_la_copia_local</dt><dd class='mono'>La copia local difiere del original en 4 bytes: dos apariciones de U+FFFC fueron convertidas en espacios por la cadena de descarga y subida. La huella con valor probatorio es la calculada contra el servidor.</dd></div><div><dt>csv_metodo_de_extraccion</dt><dd class='mono'>Se localiza la comilla invertida que abre el literal de plantilla antes de la cabecera &#x27;ID,Organization,Stakeholder category,Region&#x27; y se recorre hasta la primera comilla invertida sin escapar, aplicando las reglas de escape de literal de plantilla de ECMAScript. Se descarta la marca de orden de bytes.</dd></div><div><dt>csv_caracteres_puntos_de_codigo</dt><dd class='mono'>18293245</dd></div><div><dt>csv_caracteres_unidades_utf16</dt><dd class='mono'>18293267</dd></div><div><dt>csv_sha256_utf8</dt><dd class='mono'>bd06302d021c87c95b566f94275139b8c1d4f95659ba2b979e6f5983d1fa7670</dd></div><div><dt>registros</dt><dd class='mono'>1534</dd></div><div><dt>identificadores_unicos</dt><dd class='mono'>1534</dd></div><div><dt>registros_declarados_por_el_faq_oficial</dt><dd class='mono'>1532</dd></div><div><dt>columnas</dt><dd class='mono'>15</dd></div><div><dt>contenido_omitido_deliberadamente</dt><dd class='mono'>El texto de las respuestas no se reproduce. Solo metadatos y magnitudes.</dd></div></dl>
+
+
+</section><section id="s-privacidad" hidden>
+
+
+<h1>Privacidad y retirada</h1>
+<p class="lead">Este registro contiene, en su mayor parte, nombres de organizaciones.
+Una parte menor son nombres de personas que participaron a título individual. Si eres una
+de ellas y no quieres aparecer aquí, escribe y se retira.</p>
+
+<h2>Quién responde de esto</h2>
+<p>Sara Sanz Herguedas, investigadora independiente.
+ORCID <a href="https://orcid.org/0009-0000-7610-6408">0009-0000-7610-6408</a>.
+Correo de contacto: <a href="mailto:sasanher@alumni.upv.es">sasanher@alumni.upv.es</a>.</p>
+
+<h2>Qué datos hay</h2>
+<p>Por cada aportación: el identificador que le asignó el Diálogo Global, el nombre de la
+organización o de la persona tal como ella misma lo escribió, la categoría de participante,
+la región, cuántas preguntas contestó y cuántos caracteres ocupan sus respuestas.</p>
+<p><strong>No se publica el texto de las respuestas.</strong> No hay direcciones de correo,
+ni teléfonos, ni direcciones postales, ni ningún dato que no estuviera ya publicado.</p>
+
+<h2>De dónde salen</h2>
+<p>Del corpus que Naciones Unidas publica en la
+<a href="https://www.un.org/global-dialogue-ai-governance/en/inputs">página de aportaciones
+del Diálogo Global sobre Gobernanza de la IA</a>. Al enviar su aportación, cada participante
+dio o no su consentimiento para que se publicara con atribución; solo se publicaron las que
+lo dieron. La página de <a href="#procedencia" data-ir="procedencia">Procedencia</a> documenta cómo se obtuvieron
+los datos y permite comprobarlo.</p>
+
+<h2>Por qué se publica</h2>
+<p>Porque una aportación a una consulta pública que no se puede encontrar ni citar queda,
+en la práctica, fuera del registro público. El corpus oficial se sirve dentro de un marco
+marcado para que los buscadores no lo indexen, sin dirección propia para cada aportación.
+Este registro existe para darles esa dirección.</p>
+<p>La base de tratamiento es el interés legítimo previsto en el artículo 6.1.f del
+Reglamento General de Protección de Datos: un fin de interés público, sobre datos que sus
+titulares consintieron publicar, con el mínimo de información necesaria para cumplirlo.
+Puedes solicitar copia del análisis que sustenta esa valoración.</p>
+
+<h2>Cómo pedir que se retire</h2>
+<p>Escribe a <a href="mailto:sasanher@alumni.upv.es">sasanher@alumni.upv.es</a> indicando el
+identificador o el nombre que aparece. No hace falta motivar la petición ni acreditar nada
+más allá de que el registro es tuyo.</p>
+<p>La retirada se hace en un plazo máximo de un mes y normalmente en pocos días. Al
+retirarse, el nombre, la categoría, la región y los enlaces desaparecen. <strong>El
+identificador permanece, con una nota de que el registro fue retirado a petición de su
+titular.</strong> Se hace así para que los recuentos del registro sigan siendo exactos: si
+los registros desaparecieran sin dejar rastro, el sitio afirmaría un total que no se podría
+verificar. Nadie queda identificado por un número que ya era público.</p>
+<p>También puedes pedir que se corrija un dato, que se rectifique la codificación de tu
+nombre, o una copia de lo que hay sobre ti.</p>
+
+<h2>Lo que este sitio no puede hacer</h2>
+<p>Este registro es una copia. Retirar un dato de aquí no lo retira del sitio de Naciones
+Unidas ni de la <a href="https://aidialoguereport.org/">réplica publicada por CeSIA</a>.
+Para eso hay que dirigirse a la Secretaría Conjunta del Diálogo Global, en
+<a href="mailto:aidialogue@un.org">aidialogue@un.org</a>.</p>
+
+<h2>Cookies y analítica</h2>
+<p>No hay. Este sitio no instala cookies, no incorpora analítica, no carga tipografías ni
+recursos de terceros y no registra quién lo visita. El alojamiento conserva registros
+técnicos propios sobre los que quien publica no tiene control.</p>
+
+<h2>Reclamar</h2>
+<p>Si consideras que el tratamiento no es correcto, puedes reclamar ante la Agencia Española
+de Protección de Datos, <a href="https://www.aepd.es">aepd.es</a>.</p>
+
+<h2>Summary in English</h2>
+<p class="en">This register holds metadata about written contributions to the UN Global
+Dialogue on AI Governance: identifier, organisation or individual name as given by the
+contributor, stakeholder category, region, and the size of the response. It does not hold
+the text of the answers. The data comes from the corpus published by the United Nations,
+where contributors had consented to publication with attribution. The basis for processing
+is legitimate interest under Article 6(1)(f) GDPR. To have your record withdrawn, write to
+sasanher@alumni.upv.es quoting the identifier or name; withdrawal takes place within one
+month. The identifier remains with a note that the record was withdrawn at its holder's
+request, so that the totals stay accurate. Withdrawal here does not remove anything from
+the United Nations site or from the CeSIA replica. This site sets no cookies and runs no
+analytics.</p>
+
+<p class="small">Última revisión: 24 de septiembre de 2026.</p>
+
+
+</section>
+
+<footer>
+<p>Sara Sanz Herguedas &middot; <a href="https://orcid.org/0009-0000-7610-6408" rel="author"><svg width="12" height="12" viewBox="0 0 24 24" aria-label="ORCID iD" role="img"><circle cx="12" cy="12" r="12" fill="#a6ce39"/><path fill="#fff" d="M8.2 18.1H6.6V7.4h1.6v10.7zM7.4 4.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm2.9 2.5h4.2c4 0 5.8 2.9 5.8 5.4 0 2.7-2.1 5.4-5.8 5.4h-4.2V7.4zm1.6 9.3h2.6c3.7 0 4.5-2.8 4.5-3.9 0-1.8-1.1-3.9-4.5-3.9h-2.6v7.8z"/></svg> https://orcid.org/0009-0000-7610-6408</a> &middot; <a href="mailto:sasanher@alumni.upv.es">sasanher@alumni.upv.es</a></p>
+</footer>
+</div>
+<script>
+(function(){
+  var bs=[].slice.call(document.querySelectorAll('.tabs button'));
+  function ir(k){
+    bs.forEach(function(b){b.setAttribute('aria-current', b.dataset.t===k);});
+    ['inicio','lista','ficha','procedencia','privacidad'].forEach(function(x){
+      document.getElementById('s-'+x).hidden = (x!==k);
+    });
+    window.scrollTo(0,0);
+  }
+  var v=['inicio','lista','ficha','procedencia','privacidad'];
+  bs.forEach(function(b){b.addEventListener('click',function(){ir(b.dataset.t)})});
+  [].slice.call(document.querySelectorAll('[data-ir]')).forEach(function(a){
+    a.addEventListener('click',function(e){e.preventDefault();ir(a.dataset.ir)});
+  });
+  var h=(location.hash||'').slice(1);
+  ir(v.indexOf(h)>-1?h:'inicio');
+})();
+</script>
+</body>
+</html>
