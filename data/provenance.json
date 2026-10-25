@@ -1,0 +1,21 @@
+{
+  "documento": "Procedencia",
+  "fecha_de_extraccion": "2026-09-23",
+  "pagina_oficial": "https://www.un.org/global-dialogue-ai-governance/en/inputs",
+  "aplicacion_incrustada": "https://aiwritteninputs.vercel.app/",
+  "artefacto_de_origen": "https://aiwritteninputs.vercel.app/assets/QuestionnaireViewer-D3o4zISX.js",
+  "artefacto_bytes_en_el_servidor": 18461048,
+  "artefacto_sha256_en_el_servidor": "bc148c0f59ffa7c252048eb28aa386c5ed76122e46ed49fafa3ce316df4919ed",
+  "artefacto_bytes_de_la_copia_local": 18461044,
+  "artefacto_sha256_de_la_copia_local": "ee6d07a9fd62f0cafad3be7a31f6bb2bf8d9a9f68cb36c304364c82a4a6fdd8f",
+  "nota_sobre_la_copia_local": "La copia local difiere del original en 4 bytes: dos apariciones de U+FFFC fueron convertidas en espacios por la cadena de descarga y subida. La huella con valor probatorio es la calculada contra el servidor.",
+  "csv_metodo_de_extraccion": "Se localiza la comilla invertida que abre el literal de plantilla antes de la cabecera 'ID,Organization,Stakeholder category,Region' y se recorre hasta la primera comilla invertida sin escapar, aplicando las reglas de escape de literal de plantilla de ECMAScript. Se descarta la marca de orden de bytes.",
+  "csv_caracteres_puntos_de_codigo": 18293245,
+  "csv_caracteres_unidades_utf16": 18293267,
+  "csv_sha256_utf8": "bd06302d021c87c95b566f94275139b8c1d4f95659ba2b979e6f5983d1fa7670",
+  "registros": 1534,
+  "identificadores_unicos": 1534,
+  "registros_declarados_por_el_faq_oficial": 1532,
+  "columnas": 15,
+  "contenido_omitido_deliberadamente": "El texto de las respuestas no se reproduce. Solo metadatos y magnitudes."
+}
