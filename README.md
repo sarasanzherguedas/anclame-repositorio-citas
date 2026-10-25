@@ -117,4 +117,4 @@ checks, which anyone can repeat.*
 
 ---
 
-<sub>Sara Sanz Herguedas · ORCID [0009-0000-7610-6408](https://orcid.org/0009-0000-7610-6408) · sasanher@bbaa.upv.es</sub>
+<sub>Sara Sanz Herguedas · ORCID [0009-0000-7610-6408](https://orcid.org/0009-0000-7610-6408) · sasanher@alumni.upv.es</sub>
